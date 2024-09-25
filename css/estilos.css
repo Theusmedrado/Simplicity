@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+body, h1, h2, p, figure, .acesso-menu{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    max-width: 100%;
+}
