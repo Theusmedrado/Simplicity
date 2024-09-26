@@ -1,10 +1,42 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     box-sizing: border-box;
+
 }
-body, h1, h2, p, figure, .acesso-menu{
+
+:root {
+    --cor-titulo: #4d4d4d;
+    --cor-texto: #333;
+    --cor-escura: #000;
+    --cor-clara: #fff;
+    --cor-inter: #ececec;
+
+}
+
+body,
+h1,
+h2,
+p,
+figure,
+.acesso-menu {
     padding: 0px;
     margin: 0px;
 }
-img{
+
+img {
     max-width: 100%;
+}
+body{
+
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--cor-texto);
+}
+a{
+    text-decoration: none;
+}
+h1,h2{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800 ;
 }
