@@ -348,3 +348,44 @@ a img{
 }
     
 }
+ /* fim da media query*/ 
+ /* customização formulário*/
+ form{
+    max-width: 500px;
+    margin: auto;
+}
+label{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--cor-texto);
+
+}
+form div{
+    margin-bottom: 1rem;
+
+}
+input, select, textarea{
+    width: 100%;
+    border: none;
+    padding: 8px;
+    height: 40px;
+    border-radius: 5px;
+}
+textarea{
+    height: auto;
+}
+button{
+    border:none;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    margin-left: 5%;
+}
+button:hover, button:focus{
+    background-color: var(--cor-texto);
+    cursor: pointer;
+    transition: 2s;
+    padding: 2% 42%;
+    
+}
