@@ -1,13 +1,18 @@
 /* Selecionando os elementos que serão manipulados */
 const formulario = document.querySelector("form");
 const campoCep = document.querySelector("#cep");
-const campoTelefone = document.querySelector("#telefone");
+const campoTelefone = document.querySelector("#Telefone");
 const campoEndereco = document.querySelector("#endereco");
 const campoBairro = document.querySelector("#bairro");
 const campoCidade = document.querySelector("#cidade");
 const campoEstado = document.querySelector("#estado");
 const botaoBuscar = document.querySelector("#buscar");
 const mensagemStatus = document.querySelector("#status");
+
+//Ativação das máscaras para telefone e Cep
+$(campoCep).mask('00000-000');
+$(campoTelefone).mask('(00) 00000-0000');
+
 
 //Ouvinte de evento para o botão buscar
 botaoBuscar.addEventListener('click', async function () {
@@ -54,10 +59,10 @@ botaoBuscar.addEventListener('click', async function () {
         for (let i = 0; i < campos.length; i++) {
             campos[i].classList.remove('campos-restantes');
 
-        campoEndereco.value = dados.logradouro;
-        campoBairro.value = dados.bairro;
-        campoCidade.value = dados.localidade;
-        campoEstado.value = dados.uf;
+            campoEndereco.value = dados.logradouro;
+            campoBairro.value = dados.bairro;
+            campoCidade.value = dados.localidade;
+            campoEstado.value = dados.uf;
         }
     }
 });
